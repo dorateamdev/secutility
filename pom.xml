@@ -15,6 +15,17 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+  <distributionManagement>
+    <repository>
+      <id>dorateam-nexus</id>
+      <url>https://nexus.dorateam.dev/repository/dorateam-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>dorateam-nexus</id>
+      <url>https://nexus.dorateam.dev/repository/dorateam-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>

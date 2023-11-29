@@ -15,7 +15,7 @@ public class DefaultSecutilityImpl implements Secutility {
     Set<Swap> swaps = new HashSet<>(10);
 
     /**
-     * Default constructor is trying to locate config in the user.home directory
+     * Default constructor is trying to load config from ${user.home}/.secutility file
      */
     public DefaultSecutilityImpl() {
         this(new File(System.getProperty("user.home"), ".secutility"));
